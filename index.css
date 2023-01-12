@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  color: white;
+}
+.circle {
+  border: 10px dotted white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  animation: loading 2s ease-in-out infinite;
+}
+
+@keyframes loading {
+  0% {
+    border-top: 10px dotted rgb(54, 54, 54);
+  }
+  25% {
+    border-right: 10px dotted rgb(54, 54, 54);
+  }
+  50% {
+    border-bottom: 10px dotted rgb(54, 54, 54);
+  }
+  75% {
+    border-left: 10px dotted rgb(54, 54, 54);
+  }
+  100% {
+    border-top: 10px dotted white;
+  }
+}
